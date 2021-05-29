@@ -1,12 +1,3 @@
-//var square =
-const spaceCount = function (space) {
-  var k = '';
-  for (var i = 0; i < space; i++) {
-    k = k + ' ';
-  }
-  return k;
-};
-
 const charac = function (arr, val) {
   var k = '';
   for (var j = val; j > 0; j--) {
@@ -17,7 +8,7 @@ const charac = function (arr, val) {
 
 const middleLines = function (arr) {
   var count = arr.length - 2;
-  var spaces = spaceCount(count);
+  var spaces = ' '.repeat(count);
   var result = '';
   for (var i = 0; i < count; i++) {
     var firstCharacter = arr[i + 1];
